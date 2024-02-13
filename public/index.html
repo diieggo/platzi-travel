@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="font-poppins">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <title>Platzi travel</title>
+</head>
+<body class="min-w-80 dark:bg-gray-900">
+    <nav class="w-screen px-6 py-3 fixed z-10 bottom-0 flex justify-around bg-white border-t border-gray-100 md:hidden dark:bg-gray-800 dark:border-gray-800">
+        <a href="./index.html">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 10L3 8M3 8L10 1L17 8M3 8V18C3 18.2652 3.10536 18.5196 3.29289 18.7071C3.48043 18.8946 3.73478 19 4 19H7M17 8L19 10M17 8V18C17 18.2652 16.8946 18.5196 16.7071 18.7071C16.5196 18.8946 16.2652 19 16 19H13M7 19C7.26522 19 7.51957 18.8946 7.70711 18.7071C7.89464 18.5196 8 18.2652 8 18V14C8 13.7348 8.10536 13.4804 8.29289 13.2929C8.48043 13.1054 8.73478 13 9 13H11C11.2652 13 11.5196 13.1054 11.7071 13.2929C11.8946 13.4804 12 13.7348 12 14V18C12 18.2652 12.1054 18.5196 12.2929 18.7071C12.4804 18.8946 12.7348 19 13 19M7 19H13" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="#stays">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 19L13 13M15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z" stroke="#CC2D4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="#recommend">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.34249 3.77789C1.56864 3.23192 1.90011 2.73584 2.31798 2.31798C2.73584 1.90011 3.23192 1.56864 3.77789 1.34249C4.32386 1.11634 4.90902 0.999939 5.49998 0.999939C6.09093 0.999939 6.6761 1.11634 7.22207 1.34249C7.76803 1.56864 8.26411 1.90011 8.68198 2.31798L9.99998 3.63598L11.318 2.31798C12.1619 1.47406 13.3065 0.99995 14.5 0.99995C15.6935 0.99995 16.8381 1.47406 17.682 2.31798C18.5259 3.1619 19 4.3065 19 5.49998C19 6.69346 18.5259 7.83806 17.682 8.68198L9.99998 16.364L2.31798 8.68198C1.90011 8.26411 1.56864 7.76803 1.34249 7.22207C1.11634 6.6761 0.999939 6.09093 0.999939 5.49998C0.999939 4.90902 1.11634 4.32386 1.34249 3.77789Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <button id="toggle-dark-sm">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                <path class="block dark:hidden" d="M13.1946 13.8217C14.9231 14.1748 16.7172 14.0122 18.354 13.354C17.684 15.0213 16.5303 16.45 15.0415 17.4562C13.5527 18.4624 11.7969 19.0001 9.99999 19C7.91037 18.9977 5.88662 18.2687 4.27565 16.9378C2.66467 15.6069 1.56683 13.757 1.17031 11.7054C0.773783 9.65374 1.10328 7.52805 2.10232 5.69272C3.10135 3.85739 4.7077 2.42673 6.64599 1.646C5.98779 3.28277 5.82514 5.0769 6.17827 6.80535C6.53139 8.53381 7.38472 10.1204 8.63217 11.3678C9.87962 12.6153 11.4662 13.4686 13.1946 13.8217Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="hidden dark:block" d="M10 1V2M10 18V19M19 10H18M2 10H1M16.364 16.364L15.657 15.657M4.343 4.343L3.636 3.636M16.364 3.636L15.657 4.343M4.343 15.657L3.636 16.364M14 10C14 11.0609 13.5786 12.0783 12.8284 12.8284C12.0783 13.5786 11.0609 14 10 14C8.93913 14 7.92172 13.5786 7.17157 12.8284C6.42143 12.0783 6 11.0609 6 10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6C11.0609 6 12.0783 6.42143 12.8284 7.17157C13.5786 7.92172 14 8.93913 14 10Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <a href="./profile.html">
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.8284 7.82843C11.5786 7.07828 12 6.06087 12 5C12 3.93913 11.5786 2.92172 10.8284 2.17157C10.0783 1.42143 9.06087 1 8 1C6.93913 1 5.92172 1.42143 5.17157 2.17157C4.42143 2.92172 4 3.93913 4 5C4 6.06087 4.42143 7.07828 5.17157 7.82843C5.92172 8.57857 6.93913 9 8 9C9.06087 9 10.0783 8.57857 10.8284 7.82843Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.05025 14.0503C4.36301 12.7375 6.14348 12 8 12C9.85652 12 11.637 12.7375 12.9497 14.0503C14.2625 15.363 15 17.1435 15 19H1C1 17.1435 1.7375 15.363 3.05025 14.0503Z" stroke="current"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </nav>
+    <nav class="hidden md:flex w-full justify-between items-center px-10 bg-white relative z-10 py-4 border-b border-gray-100 dark:bg-gray-900 dark:border-gray-800">
+        <span>
+            <a href="./index.html" class="text-primary text-xl font-medium dark:text-white">Platzi Travel</a>
+        </span>
+        <ul class="flex gap-8">
+            <li>
+                <a href="#recommend" class="text-primary font-light dark:text-white">Locations</a>
+            </li>
+            <li>
+                <a href="#stays" class="text-primary font-light dark:text-white">Stays</a>
+            </li>
+            <li>
+                <a href="#FAQs" class="text-primary font-light dark:text-white">FAQs</a>
+            </li>
+            <li>
+                <a href="#about" class="text-primary font-light dark:text-white">About Us</a>
+            </li>
+        </ul>
+        <div class="flex gap-4">
+            <a href="#stays">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="stroke-[#CC2D4A]" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 19L13 13M15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </a>
+            <button id="toggle-dark">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                    <path class="bloxk dark:hidden" d="M13.1946 13.8217C14.9231 14.1748 16.7172 14.0122 18.354 13.354C17.684 15.0213 16.5303 16.45 15.0415 17.4562C13.5527 18.4624 11.7969 19.0001 9.99999 19C7.91037 18.9977 5.88662 18.2687 4.27565 16.9378C2.66467 15.6069 1.56683 13.757 1.17031 11.7054C0.773783 9.65374 1.10328 7.52805 2.10232 5.69272C3.10135 3.85739 4.7077 2.42673 6.64599 1.646C5.98779 3.28277 5.82514 5.0769 6.17827 6.80535C6.53139 8.53381 7.38472 10.1204 8.63217 11.3678C9.87962 12.6153 11.4662 13.4686 13.1946 13.8217Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="hidden dark:block" d="M10 1V2M10 18V19M19 10H18M2 10H1M16.364 16.364L15.657 15.657M4.343 4.343L3.636 3.636M16.364 3.636L15.657 4.343M4.343 15.657L3.636 16.364M14 10C14 11.0609 13.5786 12.0783 12.8284 12.8284C12.0783 13.5786 11.0609 14 10 14C8.93913 14 7.92172 13.5786 7.17157 12.8284C6.42143 12.0783 6 11.0609 6 10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6C11.0609 6 12.0783 6.42143 12.8284 7.17157C13.5786 7.92172 14 8.93913 14 10Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                           
+            </button>
+            <a href="./profile.html">
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.8284 7.82843C11.5786 7.07828 12 6.06087 12 5C12 3.93913 11.5786 2.92172 10.8284 2.17157C10.0783 1.42143 9.06087 1 8 1C6.93913 1 5.92172 1.42143 5.17157 2.17157C4.42143 2.92172 4 3.93913 4 5C4 6.06087 4.42143 7.07828 5.17157 7.82843C5.92172 8.57857 6.93913 9 8 9C9.06087 9 10.0783 8.57857 10.8284 7.82843Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.05025 14.0503C4.36301 12.7375 6.14348 12 8 12C9.85652 12 11.637 12.7375 12.9497 14.0503C14.2625 15.363 15 17.1435 15 19H1C1 17.1435 1.7375 15.363 3.05025 14.0503Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                        
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section class="w-full h-[calc(100vh-45px)] max-h-[620px] min-h-[460px] relative md:h-[calc(100vh-60px)]" id="home">
+            <div class="w-full h-full">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./imgs/san_francisco_desktop.webp">
+                    <img class="w-full h-full object-cover object-center" src="./imgs/san_francisco_mobile.webp" alt="San Francisco">
+                </picture>
+            </div>
+            <div class="absolute top-0 w-full h-full px-4 pb-10 pt-24 flex flex-col items-center justify-between md:justify-center md:items-start md:pl-16">
+                <header class="w-full flex flex-col gap-4 md:hidden">
+                    <h1 class="absolute w-full top-0 left-0 p-2 text-center text-2xl bg-white text-primary border-b border-gray-100 dark:bg-gray-900 dark:border-gray-900 dark:text-white">Platzi Travel</h1>
+                    <div class="bg-white flex px-6 gap-4 justify-center items-center rounded-full shadow-md">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 19L13 13M15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z" stroke="#CC2D4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </span>
+                        <input class="w-4/5 py-4 border-none focus:outline-none focus:ring-0" type="search" name="search-city" id="search-city" placeholder="Search a city">
+                    </div>
+                </header>
+                <div class="hidden md:block mb-8">
+                    <h1 class="text-3xl text-gray-800 font-medium">Find More Locations<br>like this</h1>
+                </div>
+                <a href="#recommend" class="bg-white text-primary rounded-full px-16 py-4 shadow-md transition-all ease-linear hover:bg-primary hover:text-white">Explore more</a>
+            </div>
+        </section>
+        <section class="mt-8 pt-8" id="recommend">
+            <h2 class="text-primary text-2xl font-medium pb-6 mx-6 dark:text-white">Our recommendations</h2>
+            <div class="w-full overflow-x-scroll scrollbar-hide">
+                <div class="w-max flex gap-4 pb-3 mx-6">
+                    <div class="recommend-card group/item">
+                        <div class="overflow-hidden rounded-t-lg">
+                            <img class="object-cover object-center transition-all ease-linear group-hover/item:scale-110" src="./imgs/city_newyork.webp" alt="New York city">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-white font-semibold">New York</h3>
+                            <p class="text-white font-light">Concrete jungle</p>
+                        </div>
+                    </div>
+                    <div class="recommend-card group/item">
+                        <div class="overflow-hidden rounded-t-lg">
+                            <img class="object-cover object-center transition-all ease-linear group-hover/item:scale-110" src="./imgs/city_norway.webp" alt="Norway city">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-white font-semibold">Norway</h3>
+                            <p class="text-white font-light">Beautiful landscapes</p>
+                        </div>
+                    </div>
+                    <div class="recommend-card group/item">
+                        <div class="overflow-hidden rounded-t-lg">
+                            <img class="object-cover object-center transition-all ease-linear group-hover/item:scale-110" src="./imgs/city_seattle.webp" alt="Seattle city">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-white font-semibold">Seattle</h3>
+                            <p class="text-white font-light">Big City</p>
+                        </div>
+                    </div>
+                    <div class="recommend-card group/item">
+                        <div class="overflow-hidden rounded-t-lg">
+                            <img class="object-cover object-center transition-all ease-linear group-hover/item:scale-110" src="./imgs/city_switzerland.webp" alt="Switzerland city">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-white font-semibold">Switzerland</h3>
+                            <p class="text-white font-light">Big City</p>
+                        </div>
+                    </div>
+                    <div class="recommend-card group/item">
+                        <div class="overflow-hidden rounded-t-lg">
+                            <img class="object-cover object-center transition-all ease-linear group-hover/item:scale-110" src="./imgs/city_yosemite.webp" alt="Yosemite city">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-white font-semibold">Yosemite</h3>
+                            <p class="text-white font-light">A break from the world</p>
+                        </div>
+                    </div>
+                    <div class="recommend-card group/item">
+                        <div class="overflow-hidden rounded-t-lg">
+                            <img class="object-cover object-center transition-all ease-linear group-hover/item:scale-110" src="./imgs/city_sydney.webp" alt="Sydney city">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-white font-semibold">Sydney</h3>
+                            <p class="text-white font-light">A beautiful place</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-8 pt-8 mx-6" id="stays">
+            <h2 class="text-primary text-2xl font-medium pb-6 dark:text-white">Trending stays</h2>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-5 md:grid-rows-3">
+                <div class="stay-card bg-chicago md:col-span-full">
+                    <h3 class="text-white text-2xl font-semibold mb-2 drop-shadow-lg">Chicago</h3>
+                    <p class="text-white w-3/5 min-w-60 drop-shadow-lg">2 rooms, bathroom and kitchen.</p>
+                </div>
+                <div class="stay-card bg-LA md:col-span-2 md:row-span-2 md:h-full">
+                    <h3 class="text-white text-2xl font-semibold mb-2 drop-shadow-lg">Los Angeles</h3>
+                    <p class="text-white w-3/5 min-w-60 drop-shadow-lg">4 rooms, 3 bathrooms,  kitchen and private pool.</p>
+                </div>
+                <div class="stay-card bg-miami md:col-span-3">
+                    <h3 class="text-white text-2xl font-semibold mb-2 drop-shadow-lg">Miami</h3>
+                    <p class="text-white w-3/5 min-w-60 drop-shadow-lg">3 rooms, 2 bathrooms,  kitchen and amazing sea view.</p>
+                </div>
+                <div class="stay-card bg-bali md:col-span-3">
+                    <h3 class="text-white text-2xl font-semibold mb-2 drop-shadow-lg">Bali</h3>
+                    <p class="text-white w-3/5 min-w-60 drop-shadow-lg">2 rooms, 2 bathrooms,  kitchen and private pool.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16 mt-8 pt-8 mx-6" id="FAQs">
+            <h2 class="text-primary text-2xl font-medium pb-6 dark:text-white">FAQs</h2>
+            <div class="flex flex-col gap-6">
+                <div class="">
+                    <h3 class="text-lg font-medium text-primary pb-2 dark:text-white">Cancellation Policy</h3>
+                    <p class="font-light dark:text-gray-300">For stays of less than one week, it is important to notify 3 days in advance, otherwise you will be penalized.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-primary pb-2 dark:text-white">Payment Methods</h3>
+                    <p class="font-light dark:text-gray-300">We accept VISA, MasterCard, American Express, PayPal and Binance.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-primary pb-2 dark:text-white">Pets</h3>
+                    <p class="font-light dark:text-gray-300">The issue of pets will depend directly on the host.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-primary pb-2 dark:text-white">Safety information</h3>
+                    <p class="font-light dark:text-gray-300">All our stays have insurance in case of accidents</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-primary pb-2 dark:text-white">Long Stays</h3>
+                    <p class="font-light dark:text-gray-300">We have stays of up to 3 months, in this case an advance payment of 50% of the rental value is required.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-12 px-6 mb-[45px] bg-slate-50 md:mb-0 dark:bg-gray-800" id="about">
+        <h2 class="text-gray-300 text-2xl font-medium pb-6 dark:text-white">About Us</h2>
+        <div class="flex flex-col gap-4 pb-6">
+            <h3 class="font-light text-gray-300">Investors</h3>
+            <h3 class="font-light text-gray-300">Jobs</h3>
+            <h3 class="font-light text-gray-300">Privacy policy</h3>
+            <h3 class="font-light text-gray-300">Terms and Conditions</h3>
+            <h3 class="font-light text-gray-300">Platzi Travel, inc</h3>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h3 class="font-light text-gray-300">Follow Us </h3>
+            <div class="flex gap-4">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-gray-300 hover:fill-primary" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-gray-300 hover:fill-primary" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

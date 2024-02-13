@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="font-poppins">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <title>Profile</title>
+</head>
+<body class="min-w-80 dark:bg-gray-900">
+    <nav class="w-screen px-6 py-3 fixed z-10 bottom-0 flex justify-around bg-white border-t border-gray-100 md:hidden dark:bg-gray-800 dark:border-gray-800">
+        <a href="./index.html">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 10L3 8M3 8L10 1L17 8M3 8V18C3 18.2652 3.10536 18.5196 3.29289 18.7071C3.48043 18.8946 3.73478 19 4 19H7M17 8L19 10M17 8V18C17 18.2652 16.8946 18.5196 16.7071 18.7071C16.5196 18.8946 16.2652 19 16 19H13M7 19C7.26522 19 7.51957 18.8946 7.70711 18.7071C7.89464 18.5196 8 18.2652 8 18V14C8 13.7348 8.10536 13.4804 8.29289 13.2929C8.48043 13.1054 8.73478 13 9 13H11C11.2652 13 11.5196 13.1054 11.7071 13.2929C11.8946 13.4804 12 13.7348 12 14V18C12 18.2652 12.1054 18.5196 12.2929 18.7071C12.4804 18.8946 12.7348 19 13 19M7 19H13" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="./index.html#stays">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 19L13 13M15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z" stroke="#CC2D4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="./index.html#recommend">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.34249 3.77789C1.56864 3.23192 1.90011 2.73584 2.31798 2.31798C2.73584 1.90011 3.23192 1.56864 3.77789 1.34249C4.32386 1.11634 4.90902 0.999939 5.49998 0.999939C6.09093 0.999939 6.6761 1.11634 7.22207 1.34249C7.76803 1.56864 8.26411 1.90011 8.68198 2.31798L9.99998 3.63598L11.318 2.31798C12.1619 1.47406 13.3065 0.99995 14.5 0.99995C15.6935 0.99995 16.8381 1.47406 17.682 2.31798C18.5259 3.1619 19 4.3065 19 5.49998C19 6.69346 18.5259 7.83806 17.682 8.68198L9.99998 16.364L2.31798 8.68198C1.90011 8.26411 1.56864 7.76803 1.34249 7.22207C1.11634 6.6761 0.999939 6.09093 0.999939 5.49998C0.999939 4.90902 1.11634 4.32386 1.34249 3.77789Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <button id="toggle-dark-sm">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                <path class="block dark:hidden" d="M13.1946 13.8217C14.9231 14.1748 16.7172 14.0122 18.354 13.354C17.684 15.0213 16.5303 16.45 15.0415 17.4562C13.5527 18.4624 11.7969 19.0001 9.99999 19C7.91037 18.9977 5.88662 18.2687 4.27565 16.9378C2.66467 15.6069 1.56683 13.757 1.17031 11.7054C0.773783 9.65374 1.10328 7.52805 2.10232 5.69272C3.10135 3.85739 4.7077 2.42673 6.64599 1.646C5.98779 3.28277 5.82514 5.0769 6.17827 6.80535C6.53139 8.53381 7.38472 10.1204 8.63217 11.3678C9.87962 12.6153 11.4662 13.4686 13.1946 13.8217Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="hidden dark:block" d="M10 1V2M10 18V19M19 10H18M2 10H1M16.364 16.364L15.657 15.657M4.343 4.343L3.636 3.636M16.364 3.636L15.657 4.343M4.343 15.657L3.636 16.364M14 10C14 11.0609 13.5786 12.0783 12.8284 12.8284C12.0783 13.5786 11.0609 14 10 14C8.93913 14 7.92172 13.5786 7.17157 12.8284C6.42143 12.0783 6 11.0609 6 10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6C11.0609 6 12.0783 6.42143 12.8284 7.17157C13.5786 7.92172 14 8.93913 14 10Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <a href="./profile.html">
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.8284 7.82843C11.5786 7.07828 12 6.06087 12 5C12 3.93913 11.5786 2.92172 10.8284 2.17157C10.0783 1.42143 9.06087 1 8 1C6.93913 1 5.92172 1.42143 5.17157 2.17157C4.42143 2.92172 4 3.93913 4 5C4 6.06087 4.42143 7.07828 5.17157 7.82843C5.92172 8.57857 6.93913 9 8 9C9.06087 9 10.0783 8.57857 10.8284 7.82843Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.05025 14.0503C4.36301 12.7375 6.14348 12 8 12C9.85652 12 11.637 12.7375 12.9497 14.0503C14.2625 15.363 15 17.1435 15 19H1C1 17.1435 1.7375 15.363 3.05025 14.0503Z" stroke="current"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </nav>
+    <nav class="hidden md:flex w-full justify-between items-center px-10 bg-white relative z-10 py-4 border-b border-gray-100 dark:bg-gray-900 dark:border-gray-800">
+        <span>
+            <a href="./index.html" class="text-primary text-xl font-medium dark:text-white">Platzi Travel</a>
+        </span>
+        <ul class="flex gap-8">
+            <li>
+                <a href="./index.html#recommend" class="text-primary font-light dark:text-white">Locations</a>
+            </li>
+            <li>
+                <a href="./index.html#stays" class="text-primary font-light dark:text-white">Stays</a>
+            </li>
+            <li>
+                <a href="./index.html#FAQs" class="text-primary font-light dark:text-white">FAQs</a>
+            </li>
+            <li>
+                <a href="./index.html#about" class="text-primary font-light dark:text-white">About Us</a>
+            </li>
+        </ul>
+        <div class="flex gap-4">
+            <a href="#stays">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="stroke-[#CC2D4A]" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 19L13 13M15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </a>
+            <button id="toggle-dark">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                    <path class="bloxk dark:hidden" d="M13.1946 13.8217C14.9231 14.1748 16.7172 14.0122 18.354 13.354C17.684 15.0213 16.5303 16.45 15.0415 17.4562C13.5527 18.4624 11.7969 19.0001 9.99999 19C7.91037 18.9977 5.88662 18.2687 4.27565 16.9378C2.66467 15.6069 1.56683 13.757 1.17031 11.7054C0.773783 9.65374 1.10328 7.52805 2.10232 5.69272C3.10135 3.85739 4.7077 2.42673 6.64599 1.646C5.98779 3.28277 5.82514 5.0769 6.17827 6.80535C6.53139 8.53381 7.38472 10.1204 8.63217 11.3678C9.87962 12.6153 11.4662 13.4686 13.1946 13.8217Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="hidden dark:block" d="M10 1V2M10 18V19M19 10H18M2 10H1M16.364 16.364L15.657 15.657M4.343 4.343L3.636 3.636M16.364 3.636L15.657 4.343M4.343 15.657L3.636 16.364M14 10C14 11.0609 13.5786 12.0783 12.8284 12.8284C12.0783 13.5786 11.0609 14 10 14C8.93913 14 7.92172 13.5786 7.17157 12.8284C6.42143 12.0783 6 11.0609 6 10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6C11.0609 6 12.0783 6.42143 12.8284 7.17157C13.5786 7.92172 14 8.93913 14 10Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                           
+            </button>
+            <a href="./profile.html">
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" class="stroke-[#3F3F46] dark:stroke-white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.8284 7.82843C11.5786 7.07828 12 6.06087 12 5C12 3.93913 11.5786 2.92172 10.8284 2.17157C10.0783 1.42143 9.06087 1 8 1C6.93913 1 5.92172 1.42143 5.17157 2.17157C4.42143 2.92172 4 3.93913 4 5C4 6.06087 4.42143 7.07828 5.17157 7.82843C5.92172 8.57857 6.93913 9 8 9C9.06087 9 10.0783 8.57857 10.8284 7.82843Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.05025 14.0503C4.36301 12.7375 6.14348 12 8 12C9.85652 12 11.637 12.7375 12.9497 14.0503C14.2625 15.363 15 17.1435 15 19H1C1 17.1435 1.7375 15.363 3.05025 14.0503Z" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                        
+            </a>
+        </div>
+    </nav>
+    <main class="mx-6 my-12">
+        <h1 class="text-2xl text-primary font-medium text-center dark:text-white">Profile</h1>
+        <div class="py-6">
+            <div class="w-fit mx-auto bg-gray-200 p-4 rounded-full">
+                <img class="block w-24" src="./imgs/user-img.webp" alt="Panda memoji">
+            </div>
+            <div class="text-center my-4">
+                <h2 class="text-lg font-medium dark:text-white" id="user-name">Name Surname</h2>
+                <p class="text-gray-500 dark:text-gray-300" id="user-username">@username</p>
+            </div>
+            <div class="max-w-96 mx-auto mt-16">
+                <form class="w-full flex flex-col gap-6" id="profile-form">
+                    <div>
+                        <label class="block mb-2 text-gray-600 dark:text-white" for="name">Full name</label>
+                        <input type="text" name="name" id="name" required class="form-input w-full border-gray-300 rounded-lg focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-25">
+                    </div>
+                    <div>
+                        <label class="block mb-2 text-gray-600 dark:text-white" for="email">Email address</label>
+                        <input type="email" name="email" id="email" required placeholder="example@mail.com" class="form-input w-full border-gray-300 rounded-lg focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-25">
+                    </div>
+                    <div>
+                        <label class="block mb-2 text-gray-600 dark:text-white" for="username">Username</label>
+                        <input type="text" name="username" id="username" required placeholder="@username" class="form-input w-full border-gray-300 rounded-lg focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-25">
+                    </div>
+                    <input type="submit" value="Update Profile" class="block bg-primary text-white p-4 w-full rounded-full">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+    <script src="./profile.js"></script>
+</body>
+</html>
