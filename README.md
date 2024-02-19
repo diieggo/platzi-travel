@@ -2,6 +2,8 @@
 
 Platzi Travel is a web project created as part of the Tailwind CSS course on Platzi. This website showcases various travel destinations and includes a user profile page. It was developed using HTML, JavaScript, and Tailwind CSS.
 
+Live: https://travel-platzi-course.netlify.app/
+
 ## Technologies Used
 
 - **HTML:** The structure and layout of the web pages are built using HTML.
@@ -18,4 +20,6 @@ Platzi Travel is a web project created as part of the Tailwind CSS course on Pla
 
 - **Theming:** Platzi Travel supports both light and dark themes. The theme is automatically selected based on your system preferences. You can also manually switch between themes.
 
-🚀 Code by Diego Huaccha Diestra
+## Credits
+- 🚀 Code by Diego Huaccha Diestra
+- 🎨 Design by Platzi
